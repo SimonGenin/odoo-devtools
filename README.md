@@ -1,4 +1,4 @@
-# Owl Chrom extension
+# Odoo Chrome extension
 
 This app contains the code for a chrome extensions. 
 It is separated into the popup app and the devtools app. 
@@ -32,6 +32,4 @@ There is a convenient refresh button on the extension card (still on the same ad
 Note you may have to open another window to see it working.
 
 ## Roadmap
-
-- Tree digging
-- Events tracking
+Tour Builder
