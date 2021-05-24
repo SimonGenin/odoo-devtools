@@ -1,15 +1,18 @@
 {
-    "name": "Chrome Extension Starter Kit",
+    "name": "Odoo Extension",
     "version": "1.0",
     "manifest_version": 2,
     "description": "Chrome Extension starter Kit with es6 standards",
     "browser_action": {
-        "default_icon": "assets/images/icon.png",
+        "default_icon": "assets/images/odoo_o_logo.png",
         "default_popup": "popup/popup.html"
     },
-    "permissions": [
-        "<all_urls>"
-    ],
+    "icons": {
+        "16": "assets/images/odoo_o_logo.png",
+        "48": "assets/images/odoo_o_logo.png",
+        "128": "assets/images/odoo_o_logo.png"
+    },
+    "permissions": ["<all_urls>"],
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "background": {
         "page": "background.html",
@@ -18,8 +21,9 @@
     "devtools_page": "devtools/devtools.html",
     "content_scripts": [
         {
-          "matches": ["<all_urls>"],
-          "js": ["content.js"]
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_end"
         }
     ]
 }
